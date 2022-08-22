@@ -41,6 +41,7 @@ input[type=text]{
 
 span.total{
     color: #FF5E19;
+    font-weight: bold;
 }
 
 .last-row{
