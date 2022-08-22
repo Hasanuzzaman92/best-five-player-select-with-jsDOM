@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+
+header, footer{
+    background-color: #000000;
+}
+
+header .banner{
+    margin-top: 8%;
+}
+
+header .banner-heading{
+    font-family: 'Berkshire Swash', cursive;
+    color: #FF5E19;
+    font-size: 4rem;
+}
+
+.btn{
+    width: 100%;
+}
+
+main{
+    background-color: #151515;
+    padding: 100px 0;
+}
+
+.card{
+    min-height: 370px;
+}
+
+.card-body{
+    background-color: #0d0d0d;
+}
+
+input[type=text]{
+    width: 120px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+span.total{
+    color: #FF5E19;
+}
+
+.last-row{
+    margin-top: -150px;
+}
+
+.footer{
+    border-top: 3px solid #717171;
+}
+
+.footer p{
+    text-align: center;
+    padding: 50px 0;
+    color: #717171;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .last-row{
+        margin-top: 20px;
+    }
+  }
+
+
+@media only screen and (max-width: 768px) {
+    /* header .medium-device{
+        display: none;
+    } */
+
+    header .img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    header .banner{
+        padding: 0px 50px;
+    }
+
+    .footer p{
+        padding: 20px 0;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .last-row{
+        margin-top: 10px;
+    }
+  }
