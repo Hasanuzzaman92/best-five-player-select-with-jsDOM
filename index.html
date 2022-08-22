@@ -43,9 +43,9 @@
                     <div class="card">
                         <img src="images/Rectangle 144 (1).png" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">Neimar Jr</h5>
+                          <h5 id="neimar-jr" class="card-title fs-3">Neimar Jr</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('neimar-jr')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -53,9 +53,9 @@
                     <div class="card">
                         <img src="images/Rectangle 144 (2).png" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">Kylian Mbappe</h5>
+                          <h5 id="m-bappe" class="card-title fs-3">Kylian Mbappe</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('m-bappe')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <div class="card-body text-white text-center">
                           <h5 id="vitor-machado" class="card-title fs-3">Vítor Machado</h5>
                           <p class="card-text"></p>
-                          <button onclick="selectPlayerName('vitor-machado')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('vitor-machado')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -77,9 +77,11 @@
                             <img src="images/Ureg Marker.png" alt="">
                           </div>
 
-                            <ol id="select-five-list" class="fs-4">
-                                <!-- <li>Lionel Messi</li> -->
-                            </ol>
+                            <div>
+                                <ol id="select-five-list" class="fs-4">
+                                    <!-- <li>${getPlayerName(elementId)}</li> -->
+                                </ol>
+                            </div>
 
                         </div>
                     </div>
@@ -91,9 +93,9 @@
                     <div class="card">
                         <img src="images/Rectangle 144.png" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">Lionel Messi</h5>
+                          <h5 id="messi" class="card-title fs-3">Lionel Messi</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('messi')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -101,9 +103,9 @@
                     <div class="card">
                         <img src="images/Rectangle 144 (4).png" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">Sergio Romas</h5>
+                          <h5 id="romas" class="card-title fs-3">Sergio Romas</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('romas')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -111,9 +113,9 @@
                     <div class="card">
                         <img src="images/Rectangle 144 (5).png" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">Renato Sanches</h5>
+                          <h5 id="sanches" class="card-title fs-3">Renato Sanches</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('sanches')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -153,9 +155,9 @@
                     <div class="card">
                         <img src="images/cr7.jpg" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">Cristiano Ronaldo</h5>
+                          <h5 id="ronaldo" class="card-title fs-3">Cristiano Ronaldo</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('ronaldo')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -163,9 +165,9 @@
                     <div class="card">
                         <img src="images/salah.jpg" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">Mohammad Salah</h5>
+                          <h5 id="salah" class="card-title fs-3">Mohammad Salah</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('salah')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>
@@ -173,9 +175,9 @@
                     <div class="card">
                         <img src="images/ronaldinho.jpg" class="card-img-top" alt="">
                         <div class="card-body text-white text-center">
-                          <h5 class="card-title fs-3">RonalDinho</h5>
+                          <h5 id="ronaldinho" class="card-title fs-3">RonalDinho</h5>
                           <p class="card-text"></p>
-                          <button href="#" class="btn btn-primary fs-4 px-3">Select</button>
+                          <button onclick="selectPlayer('ronaldinho')" href="#" class="btn btn-primary fs-4 px-3">Select</button>
                         </div>
                     </div>
                 </div>

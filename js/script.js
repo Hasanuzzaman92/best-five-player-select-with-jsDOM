@@ -1,22 +1,21 @@
-function selectPlayerName(elementId){
-   const playerNameElenent = document.getElementById(elementId);
-   const playerName = playerNameElenent.innerText;
-   return playerName;
-}
-
-function selectVitor(){
-    const nameElement = document.getElementById('vitor-machado');
+function getPlayerName(elementId){
+    const nameElement = document.getElementById(elementId);
     const name = nameElement.innerText;
-    return name
+    return name;
 }
 
-function selectPlayer(){
+
+
+function selectPlayer(elementId){
     const playerSelect = document.getElementById('select-five-list');
     const li =  document.createElement("li");
+    const playerName = getPlayerName(elementId)
+
     li.innerHTML = `
-    <li>${selectPlayerName(elementId)}</li>
+    <ol class="fs-4 list-unstyled">
+        <li class="player-list">${playerName}</li>
+    </ol>
     `;
-
+    
     playerSelect.appendChild(li);
-
 }
