@@ -1,9 +1,9 @@
+
 function getPlayerName(elementId){
     const nameElement = document.getElementById(elementId);
     const name = nameElement.innerText;
     return name;
 }
-
 
 
 function selectPlayer(elementId){
@@ -16,15 +16,26 @@ function selectPlayer(elementId){
         <li class="player-list">${playerName}</li>
     </ol>
     `;
-    
+
     playerSelect.appendChild(li);
+
+    
+    
+    
+    const selectedPlayers = document.getElementsByClassName('player-list');
+    const totalPlayer = selectedPlayers.length;
+    
+    if(totalPlayer > 5){
+        alert("you can't select more than 5 players");
+        playerSelect.removeChild(li);
+    } 
     
 
 }
 
 
 /* ---------------------------
- player expence calculation 
+ player expencess calculation 
  ------------------------------*/
 
  function getInputValueById(elementId){
@@ -35,16 +46,21 @@ function selectPlayer(elementId){
 
 
 
+
 document.getElementById('calculate-btn').addEventListener('click', function(){
     const perPlayerValue = getInputValueById('per-player-field');
 
     const selectedPlayers = document.getElementsByClassName('player-list');
+
     const totalPlayer = selectedPlayers.length;
 
     const playerExpencens = perPlayerValue * totalPlayer;
 
     const playerExpenceElement = document.getElementById('player-exp');
     playerExpenceElement.innerText = playerExpencens;
+
+
+
 })
 
 
@@ -59,6 +75,9 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 
     const totalExpenceElement = document.getElementById('total-exp');
     totalExpenceElement.innerText = totalCost;
+
+
+
 })
 
 
