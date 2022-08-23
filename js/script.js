@@ -34,6 +34,13 @@ function selectPlayer(elementId){
 }
 
 
+function disableButton(button) {
+    button.disabled = true;
+}
+
+
+
+
 /* ---------------------------
  player expencess calculation 
  ------------------------------*/
